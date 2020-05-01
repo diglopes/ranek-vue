@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <AppHeader />
-    <router-view/>
+    <main>
+      <router-view />
+    </main>
+    <AppFooter />
   </div>
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue';
+import AppFooter from '@/components/AppFooter.vue';
+
 
 export default {
   components: {
     AppHeader,
+    AppFooter,
   },
 };
 </script>
@@ -28,7 +34,7 @@ body, ul, li, h1, p {
 ul {list-style: none;}
 
 body {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvecontenttica, Arial, sans-serif;
   color: #345;
   background: url('./assets/pattern.svg') repeat top;
 }
@@ -41,6 +47,16 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .btn {
