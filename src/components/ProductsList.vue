@@ -58,12 +58,10 @@ export default {
     fetchProducts() {
       this.products = null;
       const query = serializeQuery(this.query);
-      setTimeout(() => {
         getProducts({ query }).then(({ data, headers }) => {
           this.totalCount = Number(headers['x-total-count']);
           this.products = data;
         });
-      }, 1000);
     },
   },
 };
