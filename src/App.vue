@@ -26,6 +26,7 @@ export default {
 :root {
   --color-primary: #87f;
   --color-text: #345;
+  --color-accent: #e80
 }
 
 * {
