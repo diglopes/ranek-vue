@@ -1,6 +1,6 @@
 <template>
   <section class="login">
-    <form @submit.prevent="login">
+    <form @submit.prevent="handleLogin">
       <h1>Login</h1>
       <label for="email">Email</label>
       <input type="email" id="email" v-model="login.email">
@@ -33,8 +33,11 @@ export default {
     CreateAccount,
   },
   methods: {
-    login() {
-      console.log('login');
+    handleLogin() {
+      const { email, senha } = this.login;
+      this.$store.dispatch('login', { email, senha }).then(() => {
+        this.$router.push({ name: 'User' });
+      });
     },
   },
 };
