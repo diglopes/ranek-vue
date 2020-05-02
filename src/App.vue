@@ -26,7 +26,9 @@ export default {
 :root {
   --color-primary: #87f;
   --color-text: #345;
-  --color-accent: #e80
+  --color-accent: #e80;
+
+  --ff: "Avenir", Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -41,7 +43,7 @@ body, ul, li, h1, p {
 ul {list-style: none;}
 
 body {
-  font-family: "Avenir", Helvecontenttica, Arial, sans-serif;
+  font-family: var(--ff);
   color: var(--color-text);
   background: url('./assets/pattern.svg') repeat top;
 }
@@ -54,6 +56,25 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+input, textarea {
+  border-radius: 4px;
+  border: none;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(30, 60, 90, 0.1);
+  transition: all .3s;
+  border: 1px solid white;
+  font-size: 1rem;
+  font-family: var(--ff);
+  margin-bottom: 15px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
 }
 
 #app {
@@ -77,7 +98,7 @@ main {
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
   transition: all 0.3s;
   border: none;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: var(--ff);
   cursor: pointer;
 }
 
