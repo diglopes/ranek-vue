@@ -22,6 +22,12 @@ export default {
 </script>
 
 <style>
+
+:root {
+  --color-primary: #87f;
+  --color-text: #345;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,12 +41,12 @@ ul {list-style: none;}
 
 body {
   font-family: "Avenir", Helvecontenttica, Arial, sans-serif;
-  color: #345;
+  color: var(--color-text);
   background: url('./assets/pattern.svg') repeat top;
 }
 
 a {
-  color: #345;
+  color: var(--color-text);
   text-decoration: none;
 }
 
@@ -62,7 +68,7 @@ main {
 .btn {
   display: block;
   padding: 10px 30px;
-  background-color: #87f;
+  background-color: var(--color-primary);
   border-radius: 4px;
   color: white;
   text-align: center;
@@ -75,7 +81,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #65d;
+  background-color: var(--color-primary);
   transform: scale(1.1);
 }
 </style>
