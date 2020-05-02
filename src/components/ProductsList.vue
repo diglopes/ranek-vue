@@ -1,6 +1,6 @@
 <template>
   <section class="products-container">
-    <div>
+    <transition mode="out-in">
       <ul v-if="products && products.length" class="products">
         <li class="product" v-for="(product, index) in products" :key="index">
           <router-link to="/">
@@ -13,12 +13,13 @@
             <p>{{product.descricao}}</p>
           </router-link>
         </li>
+        <AppPagination :totalCount="totalCount" :pageProductsLimit="pageProductsLimit"/>
       </ul>
       <div class="no-results" v-else-if="products && !products.length">
         <p>Busca sem resultados, tente outro termo</p>
       </div>
-    </div>
-    <AppPagination :totalCount="totalCount" :pageProductsLimit="pageProductsLimit"/>
+      <AppLoading v-else/>
+    </transition>
   </section>
 </template>
 
@@ -55,11 +56,14 @@ export default {
   },
   methods: {
     fetchProducts() {
+      this.products = null;
       const query = serializeQuery(this.query);
-      getProducts({ query }).then(({ data, headers }) => {
-        this.totalCount = Number(headers['x-total-count']);
-        this.products = data;
-      });
+      setTimeout(() => {
+        getProducts({ query }).then(({ data, headers }) => {
+          this.totalCount = Number(headers['x-total-count']);
+          this.products = data;
+        });
+      }, 1000);
     },
   },
 };
