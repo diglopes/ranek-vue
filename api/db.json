@@ -1,0 +1,44 @@
+{
+    "usuarios":[
+        {
+            "id": "johndoe@email.com",
+            "email": "johndoe@email.com",
+            "nome": "John Doe",
+            "senha": "123",
+            "rua": "Rua Foo bar",
+            "cep": "11111-111",
+            "numero": "25",
+            "estado": "SP",
+            "cidade": "Cubatao"
+        }
+    ],
+    "produtos":[
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        }
+    ]
+}
