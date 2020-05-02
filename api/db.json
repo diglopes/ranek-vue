@@ -39,6 +39,411 @@
             "vendido": false,
             "descricao": "Esse é um tablet show",
             "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
+        },
+        {
+            "id": "Notebook",
+            "nome": "Notebook",
+            "usuario_id": "johndoe@email.com",
+            "preco": "4999",
+            "vendido": false,
+            "descricao": "Esse é um notebook maneirão",
+            "fotos": []
+        },
+        {
+            "id": "Celular",
+            "nome": "Celular",
+            "usuario_id": "johndoe@email.com",
+            "preco": "1999",
+            "vendido": false,
+            "descricao": "Esse é um celular top",
+            "fotos": []
+        },
+        {
+            "id": "Tablet",
+            "nome": "Tablet",
+            "usuario_id": "johndoe@email.com",
+            "preco": "2599",
+            "vendido": false,
+            "descricao": "Esse é um tablet show",
+            "fotos": []
         }
     ]
 }

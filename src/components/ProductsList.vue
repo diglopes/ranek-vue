@@ -1,21 +1,24 @@
 <template>
   <section class="products-container">
-    <ul v-if="products && products.length" class="products">
-      <li class="product" v-for="product in products" :key="product.id">
-        <router-link to="/">
-          <img v-if="product.fotos.length"
-            :src="product.image[0].src"
-            :alt="product.image[0].alt"
-          >
-          <p class="price">{{product.preco}}</p>
-          <h2 class="title">{{product.nome}}</h2>
-          <p>{{product.descricao}}</p>
-        </router-link>
-      </li>
-    </ul>
-    <div class="no-results" v-else-if="products && !products.length">
-      <p>Busca sem resultados, tente outro termo</p>
+    <div>
+      <ul v-if="products && products.length" class="products">
+        <li class="product" v-for="(product, index) in products" :key="index">
+          <router-link to="/">
+            <img v-if="product.fotos.length"
+              :src="product.image[0].src"
+              :alt="product.image[0].alt"
+            >
+            <p class="price">{{product.preco}}</p>
+            <h2 class="title">{{product.nome}}</h2>
+            <p>{{product.descricao}}</p>
+          </router-link>
+        </li>
+      </ul>
+      <div class="no-results" v-else-if="products && !products.length">
+        <p>Busca sem resultados, tente outro termo</p>
+      </div>
     </div>
+    <AppPagination :totalCount="totalCount" :pageProductsLimit="pageProductsLimit"/>
   </section>
 </template>
 
@@ -23,14 +26,26 @@
 <script>
 import { getProducts } from '@/services/products';
 import { serializeQuery } from '@/helpers';
+import AppPagination from '@/components/AppPagination.vue';
 
 export default {
   created() {
     this.fetchProducts();
   },
+  data: () => ({
+    products: null,
+    totalCount: 0,
+  }),
+  components: {
+    AppPagination,
+  },
   computed: {
     query() {
       return this.$route.query;
+    },
+    pageProductsLimit() {
+      // eslint-disable-next-line
+      return Number(this.$route.query._limit)
     },
   },
   watch: {
@@ -41,14 +56,12 @@ export default {
   methods: {
     fetchProducts() {
       const query = serializeQuery(this.query);
-      getProducts({ query }).then(({ data }) => {
+      getProducts({ query }).then(({ data, headers }) => {
+        this.totalCount = Number(headers['x-total-count']);
         this.products = data;
       });
     },
   },
-  data: () => ({
-    products: null,
-  }),
 };
 </script>
 
@@ -62,7 +75,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .product {
