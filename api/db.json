@@ -18,7 +18,7 @@
             "nome": "Notebook",
             "usuario_id": "johndoe@email.com",
             "preco": "4999",
-            "vendido": false,
+            "vendido": true,
             "descricao": "Esse é um notebook maneirão",
             "fotos": []
         },

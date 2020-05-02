@@ -1,4 +1,5 @@
 import httpRequest from './httpRequest';
 
-// eslint-disable-next-line
-export const getProducts = ({query = ""}) => httpRequest.get(`/produtos${query}`);
+export const getProducts = ({ query = '' }) => httpRequest.get(`/produtos${query}`);
+
+export const getProductById = (id) => httpRequest.get(`produtos/${id}`);

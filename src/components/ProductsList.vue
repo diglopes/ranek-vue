@@ -3,12 +3,12 @@
     <transition mode="out-in">
       <ul v-if="products && products.length" class="products">
         <li class="product" v-for="(product, index) in products" :key="index">
-          <router-link to="/">
+          <router-link :to="{name: 'Product', params: {id: product.id}}">
             <img v-if="product.fotos.length"
               :src="product.image[0].src"
               :alt="product.image[0].alt"
             >
-            <p class="price">{{product.preco}}</p>
+            <p class="price">{{product.preco | currencyConvert}}</p>
             <h2 class="title">{{product.nome}}</h2>
             <p>{{product.descricao}}</p>
           </router-link>
@@ -58,10 +58,10 @@ export default {
     fetchProducts() {
       this.products = null;
       const query = serializeQuery(this.query);
-        getProducts({ query }).then(({ data, headers }) => {
-          this.totalCount = Number(headers['x-total-count']);
-          this.products = data;
-        });
+      getProducts({ query }).then(({ data, headers }) => {
+        this.totalCount = Number(headers['x-total-count']);
+        this.products = data;
+      });
     },
   },
 };
