@@ -35,6 +35,7 @@
 
 <script>
 import { mapFields } from '@/helpers';
+import cepService from '@/services/cepService';
 
 export default {
   computed: {
@@ -43,6 +44,23 @@ export default {
       mutation: 'UPDATE_USER',
       base: 'user',
     }),
+  },
+  watch: {
+    cep(val) {
+      this.fillAddressFields(val);
+    },
+  },
+  methods: {
+    fillAddressFields(cep) {
+      const cepSanitized = cep.replace(/\D/g, '');
+      if (cepSanitized.length === 8) {
+        cepService(cepSanitized).then((data) => {
+          Object.keys(data).forEach((key) => {
+            this[key] = data[key];
+          });
+        });
+      }
+    },
   },
 };
 </script>
