@@ -5,6 +5,7 @@ import { getUser } from '@/services/userService';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  strict: true,
   state: {
     isLogged: false,
     user: {
@@ -25,7 +26,7 @@ export default new Vuex.Store({
       state.isLogged = payload;
     },
     UPDATE_USER(state, payload) {
-      state.user = payload;
+      state.user = { ...state.user, ...payload };
     },
   },
   actions: {
