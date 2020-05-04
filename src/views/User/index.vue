@@ -30,7 +30,8 @@
 export default {
   methods: {
     handleLogout() {
-
+      this.$store.dispatch('logout');
+      this.$router.push({ name: 'Login' });
     },
   },
 };
