@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import { getUser } from '@/services/userService';
+import { getUser, createUser } from '@/services/userService';
+import { v4 as uuidv4 } from 'uuid';
 
 Vue.use(Vuex);
 
@@ -38,7 +39,13 @@ export default new Vuex.Store({
         }
       });
     },
+    createNewUser({ commit }, payload) {
+      return createUser(payload).then(() => {
+        commit('UPDATE_USER', { id: uuidv4() });
+      });
+    },
   },
+
   modules: {
   },
 });

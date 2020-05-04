@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form @submit.prevent="submitMethod">
     <label for="name">Nome</label>
     <input id="name" type="text" v-model="nome">
 
@@ -38,6 +38,11 @@ import { mapFields } from '@/helpers';
 import cepService from '@/services/cepService';
 
 export default {
+  props: {
+    submitMethod: {
+      type: Function,
+    },
+  },
   computed: {
     ...mapFields({
       fields: ['nome', 'email', 'senha', 'estado', 'cep', 'cidade', 'bairro', 'rua', 'numero'],
