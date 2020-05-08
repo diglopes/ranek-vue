@@ -2,14 +2,15 @@
   "usuario": [
     {
       "id": "diego@email.com",
-      "email": "diego@email.com",
       "nome": "Diego Lopes",
+      "email": "diego@email.com",
       "senha": "123",
-      "rua": "Rua Foo bar",
-      "cep": "11111-111",
+      "cep": "11530080",
+      "rua": "Avenida Beira Mar",
       "numero": "25",
-      "estado": "SP",
-      "cidade": "Cubatao"
+      "bairro": "Jardim Casqueiro",
+      "cidade": "Cubatão",
+      "estado": "SP"
     }
   ],
   "produtos": [
