@@ -47,8 +47,22 @@ export default {
         this.$router.push({ name: 'UserPurchases' });
       });
     },
+    async createAccount() {
+      try {
+        const { email, senha } = this.$store.state.user;
+        await this.$store.dispatch('createNewUser', this.$store.state.user);
+        await this.$store.dispatch('login', { email, senha });
+        await this.createNewTransaction();
+      } catch (error) {
+        console.error(error);
+      }
+    },
     handlePurchase() {
-      this.createNewTransaction();
+      if (this.user.isLogged) {
+        this.createNewTransaction();
+      } else {
+        this.createAccount();
+      }
     },
   },
 };

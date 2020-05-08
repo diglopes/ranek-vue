@@ -11,6 +11,18 @@
       "bairro": "Jardim Casqueiro",
       "cidade": "Cubatão",
       "estado": "SP"
+    },
+    {
+      "id": "ZcGARqe",
+      "nome": "Junior",
+      "email": "junin@email.com",
+      "senha": "123",
+      "cep": "11530080",
+      "rua": "Avenida Beira Mar",
+      "numero": "111",
+      "bairro": "Jardim Casqueiro",
+      "cidade": "Cubatão",
+      "estado": "SP"
     }
   ],
   "produtos": [
@@ -44,6 +56,27 @@
         "cidade": "Cubatão"
       },
       "id": 1
+    },
+    {
+      "comprador_id": "ZcGARqe",
+      "vendedor_id": "diego@email.com",
+      "product": {
+        "nome": "novo propduto",
+        "preco": "100",
+        "descricao": "",
+        "vendido": false,
+        "usuario_id": "diego@email.com",
+        "id": 1
+      },
+      "endereco": {
+        "cep": "11530080",
+        "rua": "Avenida Beira Mar",
+        "numero": "111",
+        "estado": "SP",
+        "bairro": "Jardim Casqueiro",
+        "cidade": "Cubatão"
+      },
+      "id": 2
     }
   ]
 }
