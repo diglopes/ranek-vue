@@ -14,17 +14,10 @@
   ],
   "produtos": [
     {
-      "nome": "novo propduto",
-      "preco": "100",
-      "descricao": "novo produto",
-      "usuario_id": "diego@email.com",
-      "id": 1
-    },
-    {
-      "nome": "novo propduto",
-      "preco": "111",
+      "nome": "novo propdutos",
+      "preco": "110",
       "descricao": "",
-      "usuario_id": "diego@email.com",
+      "usuario_id": "",
       "id": 2
     }
   ]

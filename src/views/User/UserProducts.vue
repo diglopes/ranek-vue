@@ -10,6 +10,7 @@
       <li v-for="product in userProducts" :key="product.id">
         <ProductItem :product="product">
           <p>{{product.descricao}}</p>
+          <button class="delete" @click="deleteProduct(product.id)">Deletar</button>
         </ProductItem>
       </li>
     </transition-group>
@@ -19,6 +20,7 @@
 <script>
 import AddProduct from '@/components/AddProduct.vue';
 import ProductItem from '@/components/ProductItem.vue';
+import { removeProductById } from '@/services/products';
 import { mapState, mapActions } from 'vuex';
 
 export default {
@@ -41,6 +43,15 @@ export default {
   },
   methods: {
     ...mapActions(['getUserProducts']),
+    deleteProduct(id) {
+      // eslint-disable-next-line
+      const confirm = window.confirm('Deseja remover este produto?');
+      if (confirm) {
+        removeProductById(id)
+          .then(() => this.getUserProducts())
+          .catch((err) => console.log(err.response));
+      }
+    },
   },
 };
 </script>
@@ -49,6 +60,19 @@ export default {
 <style scoped>
 h2 {
   margin-bottom: 20px;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../../assets/remove.svg") no-repeat center center;
+  width: 24px;
+  height: 24px;
+  text-indent: 1000px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
 }
 
 .list-enter,
