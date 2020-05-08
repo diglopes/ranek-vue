@@ -4,7 +4,7 @@
       <ul v-if="products && products.length" class="products">
         <li class="product" v-for="(product, index) in products" :key="index">
           <router-link :to="{name: 'Product', params: {id: product.id}}">
-            <img v-if="product.fotos.length"
+            <img v-if="product.fotos && product.fotos.length"
               :src="product.image[0].src"
               :alt="product.image[0].alt"
             >
