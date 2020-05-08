@@ -7,7 +7,7 @@
     <h2>Seus produtos</h2>
 
     <transition-group v-if="userProducts.length" name="list" tag="ul">
-      <li v-for="(product, index) in userProducts" :key="index">
+      <li v-for="product in userProducts" :key="product.id">
         <ProductItem :product="product">
           <p>{{product.descricao}}</p>
         </ProductItem>
@@ -47,7 +47,18 @@ export default {
 
 
 <style scoped>
-  h2 {
-    margin-bottom: 20px;
-  }
+h2 {
+  margin-bottom: 20px;
+}
+
+.list-enter,
+.list-leave-to {
+  opacity: 0;
+  transform: translate3d(20px, 0, 0);
+}
+
+.list-enter-active,
+.list-leave-active  {
+  transition: all 0.3s;
+}
 </style>
