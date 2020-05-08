@@ -37,7 +37,7 @@ export default {
   box-sizing: border-box;
 }
 
-body, ul, li, h1, p {
+body, ul, li, h1, h2, p {
   padding: 0;
   margin: 0;
 }

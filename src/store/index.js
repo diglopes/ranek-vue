@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import { getUser, createUser } from '@/services/userService';
+import { getProductsByUserId } from '@/services/products';
 import { v4 as uuidv4 } from 'uuid';
 
 Vue.use(Vuex);
@@ -21,6 +22,7 @@ export default new Vuex.Store({
       cidade: '',
       estado: '',
     },
+    userProducts: [],
   },
   mutations: {
     UPDATE_LOGIN(state, payload) {
@@ -28,6 +30,12 @@ export default new Vuex.Store({
     },
     UPDATE_USER(state, payload) {
       state.user = { ...state.user, ...payload };
+    },
+    UPDATE_USER_PRODUCTS(state, payload) {
+      state.userProducts = payload;
+    },
+    ADD_USER_PRODUCTS(state, payload) {
+      state.userProducts.unshift(payload);
     },
   },
   actions: {
@@ -59,8 +67,12 @@ export default new Vuex.Store({
         commit('UPDATE_USER', { id: uuidv4() });
       });
     },
+    getUserProducts({ commit, state }) {
+      return getProductsByUserId(state.user.id).then(({ data }) => {
+        commit('UPDATE_USER_PRODUCTS', data);
+      });
+    },
   },
-
   modules: {
   },
 });
