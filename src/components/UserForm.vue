@@ -1,13 +1,15 @@
 <template>
   <form @submit.prevent="submitMethod">
-    <label for="name">Nome</label>
-    <input id="name" type="text" v-model="nome">
+    <template v-if="hasToShow">
+      <label for="name">Nome</label>
+      <input id="name" type="text" v-model="nome">
 
-    <label for="email">Email</label>
-    <input id="email" type="email" v-model="email">
+      <label for="email">Email</label>
+      <input id="email" type="email" v-model="email">
 
-    <label for="password">Senha</label>
-    <input id="password" type="password" v-model="senha">
+      <label for="password">Senha</label>
+      <input id="password" type="password" v-model="senha">
+    </template>
 
     <label for="cep">Cep</label>
     <input id="cep" type="text" v-model="cep">
@@ -49,6 +51,9 @@ export default {
       mutation: 'UPDATE_USER',
       base: 'user',
     }),
+    hasToShow() {
+      return !this.$store.state.isLogged || this.$route.name === 'UserEdit';
+    },
   },
   watch: {
     cep(val) {

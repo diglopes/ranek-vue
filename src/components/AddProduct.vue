@@ -25,6 +25,7 @@ export default {
       nome: '',
       preco: 0,
       descricao: '',
+      vendido: false,
     },
   }),
   computed: {

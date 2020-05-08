@@ -15,11 +15,35 @@
   ],
   "produtos": [
     {
-      "nome": "novo propdutos",
-      "preco": "110",
+      "nome": "novo propduto",
+      "preco": "100",
       "descricao": "",
-      "usuario_id": "",
-      "id": 2
+      "vendido": false,
+      "usuario_id": "diego@email.com",
+      "id": 1
+    }
+  ],
+  "transacao": [
+    {
+      "comprador_id": "diego@email.com",
+      "vendedor_id": "diego@email.com",
+      "product": {
+        "nome": "novo propduto",
+        "preco": "100",
+        "descricao": "",
+        "vendido": false,
+        "usuario_id": "diego@email.com",
+        "id": 1
+      },
+      "endereco": {
+        "cep": "11530080",
+        "rua": "Avenida Beira Mar",
+        "numero": "25",
+        "estado": "SP",
+        "bairro": "Jardim Casqueiro",
+        "cidade": "Cubatão"
+      },
+      "id": 1
     }
   ]
 }

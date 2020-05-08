@@ -10,7 +10,10 @@
         <h1>{{product.nome}}</h1>
         <p class="price">{{product.preco | currencyConvert}}</p>
         <p class="description">{{product.descricao}}</p>
-        <button class="btn" v-if="!product.vendido">Comprar</button>
+        <transition v-if="!product.vendido" mode="out-in">
+          <button class="btn" v-if="!isCheckoutOpen" @click="isCheckoutOpen = true">Comprar</button>
+          <AppCheckout v-else :product="product"/>
+        </transition>
         <button class="btn" disabled v-else>Produto vendido</button>
       </div>
     </div>
@@ -20,14 +23,19 @@
 
 <script>
 import { getProductById } from '@/services/products';
+import AppCheckout from '@/components/AppCheckout.vue';
 
 export default {
   props: ['id'],
   created() {
     this.fetchProduct();
   },
+  components: {
+    AppCheckout,
+  },
   data: () => ({
     product: null,
+    isCheckoutOpen: false,
   }),
   methods: {
     fetchProduct() {
