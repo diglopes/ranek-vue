@@ -10,6 +10,7 @@
 <script>
 import UserForm from '@/components/UserForm.vue';
 import { createTransaction } from '@/services/transactionService';
+import { mapState } from 'vuex';
 
 export default {
   props: {
@@ -19,9 +20,7 @@ export default {
     UserForm,
   },
   computed: {
-    user() {
-      return this.$store.state.user;
-    },
+    ...mapState(['user', 'isLogged']),
     purchase() {
       const {
         id, cep, rua, numero, estado, bairro, cidade,
@@ -29,7 +28,7 @@ export default {
       return {
         comprador_id: id,
         vendedor_id: this.product.usuario_id,
-        product: this.product,
+        produto: this.product,
         endereco: {
           cep,
           rua,
@@ -58,7 +57,7 @@ export default {
       }
     },
     handlePurchase() {
-      if (this.user.isLogged) {
+      if (this.isLogged) {
         this.createNewTransaction();
       } else {
         this.createAccount();
