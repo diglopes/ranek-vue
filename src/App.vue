@@ -74,6 +74,7 @@ input, textarea {
   font-size: 1rem;
   font-family: var(--ff);
   margin-bottom: 15px;
+  width: 100%;
 }
 
 input:hover,

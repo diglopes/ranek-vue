@@ -30,6 +30,8 @@ form {
   max-width: 600px;
   margin: 30px auto 60px auto;
   position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #search {

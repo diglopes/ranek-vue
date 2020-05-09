@@ -85,4 +85,14 @@ h3 {
 .delivery span {
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 600px) {
+  h3 {
+    justify-self: start;
+  }
+
+  .delivery {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

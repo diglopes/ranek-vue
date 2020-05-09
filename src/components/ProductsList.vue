@@ -71,13 +71,21 @@ export default {
 .products-container {
   max-width: 1000px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  margin: 30px 0;
+  grid-gap: 10px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 600px){
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .product {
